@@ -61,9 +61,9 @@ if (!$dbconn4) {
   WHERE
   CAST(\"public\".pos_session.stop_at AS DATE) >= '2019-01-01'::date
   GROUP BY
-  \"public\".pos_session."id",
+  \"public\".pos_session.\"id\",
   CAST(\"public\".pos_session.stop_at AS DATE),
-  \"public\".pos_config."name"
+  \"public\".pos_config.\"name\"
   ORDER BY
   CAST(\"public\".pos_session.stop_at AS DATE) ASC
   ";
