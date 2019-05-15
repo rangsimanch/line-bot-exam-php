@@ -24,7 +24,7 @@ if (!$dbconn4) {
   
   $result = pg_query($conn, "SELECT author, email FROM authors");
   if (!$result) {
-    echo "An error occurred.\n";
+    echo "An error Query.\n";
     exit;
   }
   
