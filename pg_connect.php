@@ -22,9 +22,9 @@ if (!$dbconn4) {
     exit;
   }
   
-  $Query = "SELECT * FROM pos_config";
+  $Query = 'SELECT * FROM pos_config';
 
-  $result = pg_query($conn, "SELECT * FROM pos_config");
+  $result = pg_query($conn, $Query);
   if (!$result) {
     echo "An error Query.\n";
     exit;
