@@ -22,14 +22,14 @@ if (!$dbconn4) {
     exit;
   }
   
-  $Query = 'SELECT * FROM "public".pos_config';
+  $Query = "SELECT * FROM \"public\".pos_config";
 
   $result = pg_query($conn, $Query);
   if (!$result) {
     echo "An error Query.\n";
     exit;
   }
-  
+
   while ($row = pg_fetch_row($result)) {
     echo "Date: $row[0]  Branch: $row[1] Total: $row[2] Province: $row[3]";
     echo "<br />\n";
