@@ -41,9 +41,9 @@
         }
 
         while ($row = pg_fetch_row($result)) {
-            $json_array[] = $row;
+            echo "DATE= $row[0] NAME= $row[1] TOTAL= $row[2] PV= $row[3]";
+            echo "<br />"
         }
-        return $json_array;
     }
 
 	function getFormatTextMessage($text)
