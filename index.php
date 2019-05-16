@@ -10,7 +10,7 @@
 
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
-	$messages['messages'][0] = getFormatTextMessage("สวัสดี");
+	$messages['messages'][0] = json_decode(getDB());
 
 	$encodeJson = json_encode($messages);
 
@@ -41,9 +41,9 @@
         }
 
         while ($row = pg_fetch_row($result)) {
-            echo "DATE= $row[0] NAME= $row[1] TOTAL= $row[2] PV= $row[3]";
-            echo "<br />"
+            $json_array[] = $row;
         }
+        return $json_array;
     }
 
 	function getFormatTextMessage($text)
