@@ -22,7 +22,7 @@ if (!$dbconn4) {
     exit;
   }
   
-  $Query = 'SELECT * FROM pos_config';
+  $Query = 'SELECT * FROM "public".pos_config';
 
   $result = pg_query($conn, $Query);
   if (!$result) {
