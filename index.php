@@ -15,7 +15,6 @@
    $id = $arrayJson['events'][0]['source']['userId'];
 
    if($message == "ขอยอดขาย"){
-
           pushMsg($arrayHeader,getDB());
     }
 
@@ -42,9 +41,9 @@
   while ($row = pg_fetch_row($result)) {
       $json_array[] = $row;
   }
-  return $json_array[];
+  return $json_array;
     }
-    
+
    function pushMsg($arrayHeader,$arrayPostData){
       $strUrl = "https://api.line.me/v2/bot/message/push";
 
