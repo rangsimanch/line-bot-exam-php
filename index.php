@@ -10,7 +10,7 @@
 
 	$messages = [];
 	$messages['replyToken'] = $replyToken;
-	$messages['messages'][0] = getFormatTextMessage(getDB());
+	$messages['messages'][0] = getFormatTextMessage("สวัสดี");
 
 	$encodeJson = json_encode($messages);
 
