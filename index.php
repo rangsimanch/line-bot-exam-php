@@ -5,7 +5,9 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
  
 // include composer autoload
-require_once 'vendor/autoload.php';
+require "vendor/autoload.php";
+
+require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
  
 // การตั้งเกี่ยวกับ bot
 require_once 'bot_settings.php';
