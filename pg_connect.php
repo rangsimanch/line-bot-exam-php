@@ -21,10 +21,8 @@ if (!$dbconn4) {
     echo "An error occurred.\n";
     exit;
   }
-  
-  $Query = "SELECT * FROM \"public\".pos_config";
 
-  $result = pg_query($conn, $Query);
+  $result = pg_query($conn,"SELECT * FROM \"public\".pos_config");
   if (!$result) {
     echo "An error Query.\n";
     exit;
