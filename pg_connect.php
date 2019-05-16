@@ -66,7 +66,7 @@ if (!$dbconn4) {
   "public".pos_config."name"
   ORDER BY
   CAST("public".pos_session.stop_at AS DATE) ASC
-  "
+  ";
 
 
   $result = pg_query($dbconn4,$query_str);
