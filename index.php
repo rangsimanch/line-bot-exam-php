@@ -10,10 +10,10 @@ require "vendor/autoload.php";
 require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
  
 // การตั้งเกี่ยวกับ bot
-require_once("bot_settings.php");
+require_once("bot_setting.php");
  
 // กรณีมีการเชื่อมต่อกับฐานข้อมูล
-require_once("pg_connect.php");
+//require_once("pg_connect.php");
  
 ///////////// ส่วนของการเรียกใช้งาน class ผ่าน namespace
 use LINE\LINEBot;
