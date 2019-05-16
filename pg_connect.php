@@ -16,7 +16,6 @@ $dbconn4 = pg_connect($conn_string);
 $dbconn5 = pg_connect("host=96.30.79.11 options='--client_encoding=UTF8'");
 //connect to a database on "localhost" and set the command line parameter which tells the encoding is in UTF-8
 
-echo "TEST!!!";
 if (!$dbconn4) {
     echo "An error occurred.\n";
     exit;
