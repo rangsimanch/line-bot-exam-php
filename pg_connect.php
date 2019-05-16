@@ -24,7 +24,7 @@ if (!$dbconn4) {
 
   $result = pg_query($dbconn4,"SELECT * FROM "public".pos_config");
   if (!$result) {
-    echo "An error Query !!!!.\n";
+    echo "An error Query.\n";
     exit;
   }
 
