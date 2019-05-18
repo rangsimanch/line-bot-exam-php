@@ -36,4 +36,6 @@ pg_close();
 return $str_output;
 }
 
+echo getLastSession();
+
 ?>
