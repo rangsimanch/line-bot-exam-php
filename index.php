@@ -13,7 +13,7 @@ require_once('vendor/linecorp/line-bot-sdk/line-bot-sdk-tiny/LINEBotTiny.php');
 require_once("bot_setting.php");
  
 // กรณีมีการเชื่อมต่อกับฐานข้อมูล
-require_once("dbconnect.php");
+require_once("queryfile.php");
 
  
 ///////////// ส่วนของการเรียกใช้งาน class ผ่าน namespace
@@ -69,7 +69,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "A":
-                    $textReplyMessage = "คุณพิมพ์ A"
+                    $textReplyMessage = getLastSession();
                     break;
                 case "B":
                     $textReplyMessage = "คุณพิมพ์ B";
