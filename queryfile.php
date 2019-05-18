@@ -1,5 +1,6 @@
 <?php
-require_once("dbconnect.php");
+    
+    require_once("dbconnect.php");
 
     $conn = OpenCon();
     $to_date = "CURRENT_DATE - INTEGER '1'";

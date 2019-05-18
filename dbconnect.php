@@ -12,7 +12,7 @@ function OpenCon()
  $dbuser = "odoo";
  $dbpass = "odoo";
  $db = "LIV";
- $conn = pg_connect($dbhost, $dbuser, $dbpass,$db);
+ $conn = pg_connect($dbhost. "," .$dbuser. "," .$dbpass. "," .$db);
  
  return $conn;
  }
