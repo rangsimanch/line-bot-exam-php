@@ -70,7 +70,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "A":
-                    $textReplyMessage = implode("|",DecodeArrJSONtoArrList(getLastSession()));
+                    $textReplyMessage = "คุณพิมพ์ A"
                     break;
                 case "B":
                     $textReplyMessage = "คุณพิมพ์ B";

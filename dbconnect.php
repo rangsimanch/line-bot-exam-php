@@ -26,5 +26,11 @@ while ($row = pg_fetch_row($result)) {
   return $json_array;
 }
 
+function DecodeArrJSONtoArrList($json_arr){
+  $ArrData = json_decode($jsonArray,true);
+  return $ArrData;
+}
+
+echo implode("|",DecodeArrJSONtoArrList(getLastSession()));
 
 ?>
