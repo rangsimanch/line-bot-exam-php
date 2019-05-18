@@ -6,6 +6,7 @@ $conn_string = "host=96.30.79.11 port=5432 dbname=LIV user=odoo password=odoo";
 
 $str_output ="";
 
+
 function getLastSession(){
 $conn = pg_connect($conn_string);
 $to_date = "CURRENT_DATE - INTEGER '1'";
@@ -34,7 +35,5 @@ foreach ($json_array as $key => $value) {
 pg_close();
 return $str_output;
 }
-
-echo getLastSession();
 
 ?>
