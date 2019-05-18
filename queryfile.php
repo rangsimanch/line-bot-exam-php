@@ -29,12 +29,10 @@ function getLastSession(){
       }
     }
 
-    CloseCon($conn)
+    CloseCon($conn);
+    echo $str_output;
     return $str_output;
-    
     }
-
-    echo "PASS";    
-
+    
 
 ?>
