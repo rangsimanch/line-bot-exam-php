@@ -33,6 +33,5 @@ foreach ($json_array as $key => $value) {
 return $str_output;
 }
 
-echo getLastSession();
-
+echo "PASS";
 ?>
