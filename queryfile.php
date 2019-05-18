@@ -23,7 +23,7 @@
       
     foreach ($json_array as $key => $value) {
       if($value[0] != ""){
-      $str_output += "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
+      $str_output = "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
       }
     }
     echo "PASS";
