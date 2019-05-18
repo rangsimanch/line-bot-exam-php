@@ -26,7 +26,7 @@ function getLastSession(){
   } 
   
   pg_close($conn)
-  return $json_array;
+  return $json_array[];
 }
 
 function DecodeArrJSONtoArrList($json_arr){
@@ -34,6 +34,6 @@ function DecodeArrJSONtoArrList($json_arr){
   return $ArrData;
 }
 
-echo implode("|",DecodeArrJSONtoArrList(getLastSession()));
+echo json_decode(getLastSession());
 
 ?>
