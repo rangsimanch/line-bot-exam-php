@@ -24,7 +24,7 @@ if (!$conn) {
   }
 
 foreach ($json_array as $key => $value) {
-  echo $value["1"] . ", " . $value["2"] . "<br>";
+  echo "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . "ยอดขาย: " . $value["2"] . "<br>";
 }
 
 ?>
