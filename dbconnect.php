@@ -26,7 +26,6 @@ if (!$conn) {
       $json_array[] = $row;
   }
   
-pg_close($conn);
 foreach ($json_array as $key => $value) {
   if($value[0] != ""){
   $str_output += "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
@@ -36,4 +35,5 @@ return $str_output;
 }
 
 echo getLastSession();
+
 ?>
