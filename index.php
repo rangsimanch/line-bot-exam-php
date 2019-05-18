@@ -15,7 +15,6 @@ require_once("bot_setting.php");
 // กรณีมีการเชื่อมต่อกับฐานข้อมูล
 require_once("dbconnect.php");
 
-require_once("jsonconvert")
  
 ///////////// ส่วนของการเรียกใช้งาน class ผ่าน namespace
 use LINE\LINEBot;
