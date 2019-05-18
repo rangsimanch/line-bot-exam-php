@@ -34,5 +34,7 @@ function getLastSession(){
     
     }
 
+    echo "PASS";
+
 
 ?>
