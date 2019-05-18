@@ -22,8 +22,9 @@ if (!$conn) {
   while ($row = pg_fetch_row($result)) {
       $json_array[] = $row;
   }
-  
-$obj_json = json_decode($json_array);
-echo $obj_json;
+
+foreach ($json_array as $key => $value) {
+  echo $value["1"] . ", " . $value["2"] . "<br>";
+}
 
 ?>
