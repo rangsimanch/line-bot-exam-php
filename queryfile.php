@@ -26,5 +26,5 @@
       $str_output += "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
       }
     }
-    echo $str_output;
+    echo "PASS";
 ?>
