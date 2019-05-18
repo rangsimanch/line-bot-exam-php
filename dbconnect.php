@@ -24,6 +24,6 @@ if (!$conn) {
   }
   
 $obj_json = json_decode($json_array);
-print $obj_json;
+echo $obj_json;
 
 ?>
