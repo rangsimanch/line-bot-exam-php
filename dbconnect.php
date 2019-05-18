@@ -33,7 +33,6 @@ foreach ($json_array as $key => $value) {
   $str_output += "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
   }
 }
-pg_close();
 return $str_output;
 
 }
