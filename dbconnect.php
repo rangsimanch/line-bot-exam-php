@@ -1,7 +1,6 @@
 <?php
 
-$conn_string = "host=96.30.79.11 port=5432 dbname=LIV user=odoo password=odoo";
-$conn = pg_connect($conn_string);
+
 //connect to a database named "test" on the host "sheep" with a username and password
 
 function getLastSession(){
@@ -10,6 +9,8 @@ function getLastSession(){
   $json_array[] = $row;
 
 if (!$conn) {
+  $conn_string = "host=96.30.79.11 port=5432 dbname=LIV user=odoo password=odoo";
+$conn = pg_connect($conn_string);
   echo "An error occurred.\n";
   exit;
 }
