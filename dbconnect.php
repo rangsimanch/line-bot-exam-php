@@ -23,17 +23,16 @@ if (!$conn) {
   while ($row = pg_fetch_row($result)) {
       $json_array[] = $row;
   }
-
+  
+pg_close($conn);
 foreach ($json_array as $key => $value) {
   if($value[0] != ""){
   $str_output += "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
   }
 }
-pg_close($conn);
 return $str_output;
 }
 
-getLastSession();
-echo $str_output;
+echo getLastSession();
 
 ?>
