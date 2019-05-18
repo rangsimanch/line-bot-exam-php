@@ -25,7 +25,5 @@ require_once("dbconnect.php");
       $str_output += "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- " . "<br>";
       }
     }
-
-    CloseCon($conn);
     echo $str_output;
 ?>
