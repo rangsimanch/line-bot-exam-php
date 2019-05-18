@@ -9,10 +9,11 @@ $str_output ="";
 function OpenCon()
  {
  $dbhost = "96.30.79.11";
+ $port = "5432";
  $dbuser = "odoo";
  $dbpass = "odoo";
  $db = "LIV";
- $conn = pg_connect($dbhost. " " .$dbuser. " " .$dbpass. " " .$db) or die 'Connect Failed';
+ $conn = pg_connect($dbhost. " " .$port. " " .$db. " ".$dbuser. " " .$dbpass) or die 'Connect Failed';
  
  return $conn;
  }
