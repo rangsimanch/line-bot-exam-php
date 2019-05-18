@@ -12,14 +12,14 @@ function OpenCon()
  $dbuser = "odoo";
  $dbpass = "odoo";
  $db = "LIV";
- $conn = new pg_connect($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
+ $conn = pg_connect($dbhost, $dbuser, $dbpass,$db) or die("Connect failed: %s\n". $conn -> error);
  
  return $conn;
  }
  
 function CloseCon($conn)
  {
- $conn -> close();
+    pg_close($conn);
  }
    
 
