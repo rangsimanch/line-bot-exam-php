@@ -24,15 +24,17 @@
 
       $i = 0;
     foreach ($json_array as $key => $value) {
-      if($value[0] != "" && $i == 0){
-       $str_result = $str_result . "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- ";
+      if($value[0] != ""){
+        if($i == 0){
+          $str_result = $str_result . "วันที่: " . $value["0"] . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- ";
+          $i++;
+        }
+        else{
+          $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- ";
+        }
       }
-      else{
-        $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- ";
+      }
 
-      $i++;
-      }
-      
     }
     return $str_result;
 }
