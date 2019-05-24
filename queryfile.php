@@ -35,7 +35,7 @@
         }
       }
     }
-    return $str_result;
+    return $str_result = trim(preg_replace('/\s+/','<bt/>',$str_result));
 }
 
 ?>
