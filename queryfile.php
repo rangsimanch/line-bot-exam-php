@@ -27,11 +27,11 @@
     foreach ($json_array as $key => $value) {
       if($value[0] != ""){
         if($i == 0){
-          $str_result = $str_result . "วันที่: " . $value["0"] . '\\n' ."สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".-" . '\\n';
+          $str_result = $str_result . "วันที่: " . $value["0"] . '\n' ."สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".-" . '\n';
           $i++;
         }
         else{
-          $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".-". '\\n';
+          $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".-". '\n';
         }
       }
     }
