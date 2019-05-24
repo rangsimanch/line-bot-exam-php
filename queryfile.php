@@ -23,6 +23,7 @@
       }
 
       $i = 0;
+      
     foreach ($json_array as $key => $value) {
       if($value[0] != ""){
         if($i == 0){
@@ -33,10 +34,7 @@
           $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- ";
         }
       }
-      }
-
     }
     return $str_result;
 }
-
 ?>
