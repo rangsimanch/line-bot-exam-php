@@ -34,7 +34,7 @@
           $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".-". '\n';
         }
       }
-    }
+    } 
     return nl2br($str_result,false);
 }
 
