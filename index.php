@@ -69,7 +69,7 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "A":
-                    $textReplyMessage = getLastSession();
+                    $textReplyMessage = escapeJsonString(getLastSession());
                     break;
                 case "B":
                     $textReplyMessage = "คุณพิมพ์ B";
