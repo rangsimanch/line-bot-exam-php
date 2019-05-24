@@ -29,7 +29,10 @@
       }
       else{
         $str_result = $str_result . " สาขา: " . $value["1"] . " ยอดขาย: " . $value["2"] . ".- ";
+
+      $i++;
       }
+      
     }
     return $str_result;
 }
