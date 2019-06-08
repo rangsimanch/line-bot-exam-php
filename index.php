@@ -69,10 +69,10 @@ if(!is_null($events)){
         case 'text':
             switch ($userMessage) {
                 case "A":
-                    $textReplyMessage = LastSession();
+                    $textReplyMessage = getSession("CURRENT_DATE - INTEGER '1'");
                     break;
                 case "B":
-                    $textReplyMessage = "คุณพิมพ์ B";
+                    $textReplyMessage = getSession("CURRENT_DATE");
                     break;
                 default:
                     $textReplyMessage = " คุณไม่ได้พิมพ์ A และ B";
