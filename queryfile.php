@@ -35,7 +35,7 @@
         }
       }
     } 
-    return nl2br($str_result,false);
+    return $str_result;
 }
 
 
