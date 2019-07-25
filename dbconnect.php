@@ -20,5 +20,8 @@ $str_query = "SELECT CAST(\"public\".pos_session.stop_at AS DATE), \"public\".po
         $str_result = "ERROR";
         exit;   
       }
+      else {
+         echo "Query Success";
+      }
 
 ?>
