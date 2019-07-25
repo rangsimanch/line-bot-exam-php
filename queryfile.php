@@ -14,11 +14,8 @@
       $result = pg_query($conn,$str_query);
       if (!$result) {
         echo "An error Query.\n";
+        $str_result = "ERROR";
         exit;   
-      }
-      else{
-        echo "Pass.\n";
-        exit;
       }
     
       while ($row = pg_fetch_row($result)) {
