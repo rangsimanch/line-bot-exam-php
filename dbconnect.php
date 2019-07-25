@@ -21,7 +21,8 @@ $str_query = "SELECT CAST(\"public\".pos_session.stop_at AS DATE), \"public\".po
         exit;   
       }
       else {
-         echo "Query Success";
+         echo "Query Success ";
+         exit;
       }
 
 ?>
