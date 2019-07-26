@@ -11,7 +11,6 @@ $str_query = "SELECT CAST(\"public\".pos_session.stop_at AS DATE), \"public\".po
       }
    else{
       echo "Success.\n";
-      exit;
    }
     
       $result = pg_query($conn,$str_query);
@@ -22,7 +21,6 @@ $str_query = "SELECT CAST(\"public\".pos_session.stop_at AS DATE), \"public\".po
       }
       else {
          echo "Query Success ";
-         exit;
       }
 
 ?>
