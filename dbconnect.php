@@ -7,7 +7,6 @@ $str_query = "SELECT CAST(\"public\".pos_session.stop_at AS DATE), \"public\".po
     $conn = pg_connect($conn_string);
     if (!$conn) {
         echo "An error occurred.\n";
-        exit;
       }
    else{
       echo "Success.\n";
@@ -17,7 +16,6 @@ $str_query = "SELECT CAST(\"public\".pos_session.stop_at AS DATE), \"public\".po
       if (!$result) {
         echo "An error Query.\n";
         $str_result = "ERROR";
-        exit;   
       }
       else {
          echo "Query Success ";
